@@ -1,0 +1,91 @@
+/* /* Default styles for all screen sizes */
+body {
+    background-color: lavender;
+}
+
+.boxContainer {
+    margin: auto;
+    margin-top: 8rem;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: aqua;
+    width: 30%;
+    margin: auto;
+}
+
+.container>div {
+    color: white;
+    display: flex;
+    font-size: 30px;
+    padding: 1rem;
+    justify-content: center;
+    background-color: black;
+    height: 4rem;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 30%;
+    margin: auto;
+    background-color: pink;
+}
+
+.main>div {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 1rem;
+}
+
+.main>:first-child {
+    background-color: white;
+    height: 4rem;
+}
+
+.main>:last-child {
+    background-color: aqua;
+    height: 4rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 70%;
+    }
+
+    .container>div {
+        font-size: 24px;
+    }
+
+    .main {
+        width: 70%;
+    }
+
+    .main>div {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    .container>div {
+        font-size: 20px;
+    }
+
+    .main {
+        width: 90%;
+    }
+
+    .main>div {
+        font-size: 20px;
+    }
+}
